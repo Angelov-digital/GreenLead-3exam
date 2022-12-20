@@ -365,12 +365,61 @@ footer{
 .teamWrap{
     width: 100%;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: center;
+
 }
 .memberWrap{
-
+    justify-items: center;
+    justify-content: center;
+    width: 300px;
+    margin: 20px;
 }
-
-
+.personImg{
+    display: block;
+    max-width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 7px 7px #ffffff;
+}
+.name{
+    color: #ffff;
+    font-family: Koulen;
+    text-align: center;
+    margin-top: 20px;
+}
+.function{
+    color: #ffff;
+    font-size: 1rem;
+    text-align: center;
+    margin: 10px;
+}
+.section7{
+    background-color: #303030;
+}
+.contactWrap{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: center;
+}
+.contTxt{
+    width: 400px;
+    margin: 20px;
+}
+.txt{
+    color: #ffff;
+    font-family: Roboto;
+    font-size: 1rem;
+}
+.inputWrap{
+    width: 400px;
+    margin: 20px;
+}
 /*CONTWRAPPERS*/
 .contWrapApproach{
     width: 80%;
