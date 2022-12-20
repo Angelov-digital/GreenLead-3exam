@@ -420,6 +420,31 @@ footer{
     width: 400px;
     margin: 20px;
 }
+.inputTxt{
+    color: #ffff;
+    font-family: Roboto;
+    
+}
+.txtInput{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.buttG2{
+    font-family: Koulen;
+    background-color: #49A057;
+    border: none;
+    color: #303030;
+    padding: 0px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-top: 2vh;
+    cursor: pointer;
+    
+}
+
+
 /*CONTWRAPPERS*/
 .contWrapApproach{
     width: 80%;
