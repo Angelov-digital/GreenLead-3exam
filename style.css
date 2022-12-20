@@ -28,11 +28,33 @@ p{
 }
 
 .navigation{
-    padding-top: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    padding-top: 0px;
     display: flex;
     justify-content: flex-start;
     background-color:#303030;
 }
+.navigationMobile{
+    display: none;
+    background-color: #303030;
+    font-size: 1rem;
+}
+@media only screen and (max-width: 700px) {
+    .navigation{
+        display: none; 
+    }
+    .navigationMobile{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        position: sticky;
+        top: 60px;
+        background-color: #303030;
+        z-index: 999;
+    }
+}
+
 .navigation-list{
     justify-content: center;
 }
@@ -40,19 +62,48 @@ p{
     justify-content: center;
 }
 .navigation-list-element:hover{
-    animation: pulse; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 0.5s; /* don't forget to set a duration! */
+    animation: pulse; 
+    animation-duration: 0.5s;
 }
-
 .navigation-link{
     color: white;
     text-align: center;
     font-size: 1.5rem;
     font-family: Koulen;
 }
+@media only screen and (max-width: 700px) {
+    .navigation-link{   
+        font-size: 1.2rem;
+    }
+}
 .logo{
-    width: 300px;
+    width: 200px;
     margin-left: 5vh;
+    padding-top: 20px;
+}
+.logoMobile{
+    display: none;
+}
+.mobileLogoWrap{
+    width: 100%;
+    background-color: #303030;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+@media only screen and (max-width: 700px) {
+    .logo{   
+        display: none;
+    }
+    .logoMobile{
+        display: block;
+        width: 200px;
+        padding: 15px;
+        background-color: #303030;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
 }
 .hero{
     background-color: #303030;
@@ -110,6 +161,11 @@ p{
 .mottoCont{
     margin-top: 15vh;
 }
+@media only screen and (max-width: 700px) {
+    .mottoCont{
+       display: none;
+    }
+  }
 #smoothCont{
     display: flex;
 }
@@ -173,20 +229,22 @@ p{
     font-size: 1.5rem;
 }
 .cardWrap{
-
     margin-left: auto;
     margin-right: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
 }
 .card{
-    background-color: ;
     border-style: solid;
     border-width: 2px;
     margin: 10px;
     text-align: center;
     padding: 20px;
     box-shadow: 5px 10px #49A057;
+    width: 200px;
 }
 .cardTxt{
     font-size: 1.1rem;
@@ -199,13 +257,9 @@ p{
 }
 
 .section5{
+    padding-top: 50px;
+}
 
-}
-footer{
-    width: 100%;
-    height: 150px;
-    background-color: #303030;
-}
 
 .headWrap{
     padding-top: 3vh;
@@ -227,6 +281,13 @@ footer{
     width: 100%;
     display: grid;
     grid-template-columns: 2fr 1fr;
+}
+@media only screen and (max-width: 700px) {
+    .service{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+
+}
 }
 .serv1{
     width: 100%;
@@ -304,7 +365,7 @@ footer{
     font-size: 1.5rem;
     font-family: Roboto;
     color: #ffff;
-    background-color: #303030;
+    background-color: #303030e1;
     z-index: 2;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -313,10 +374,11 @@ footer{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    white-space: nowrap;   
+    white-space: wrap;   
 }
 .section6{
     background-color: #303030;
+    padding-top: 50px;
 }
 .beneWrap{
     display: flex;
@@ -398,6 +460,8 @@ footer{
 }
 .section7{
     background-color: #303030;
+    padding-bottom: 40px;
+    padding-top: 50px;
 }
 .contactWrap{
     width: 100%;
@@ -443,7 +507,25 @@ footer{
     cursor: pointer;
     
 }
+footer{
+    width: 100%;
+    height: 150px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.contact{
+    color: #303030;
+    font-family: Koulen;
+    font-size: 1.3rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 20px;
+}
+.contactWrap{
 
+}
 
 /*CONTWRAPPERS*/
 .contWrapApproach{

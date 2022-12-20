@@ -1,13 +1,13 @@
 const form = document.getElementById('emailForm');
 form.addEventListener('submit', (event) => {
-  event.preventDefault(); // Prevent the form from being submitted
+  event.preventDefault(); 
  
   const formData = new FormData(form);
   const from = formData.get('from');
   const subject = formData.get('subject');
   const body = formData.get('body');
  
-  // Send the email using the sendEmail function from the previous example
+  
   sendEmail(from, subject, body);
 });
 

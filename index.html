@@ -15,38 +15,60 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    html {
+        scroll-behavior: smooth;
+    }
 </style>
 
 <nav class="navigation">
-    <div>
+    <a href="#main">
         <img src="graphics/logo.png" class="logo">
-    </div>
+    </a>
 
     <ul class="navigation-list">
         <li class="navigation-list-element">
-            <a class="navigation-link" href="">SERVICES</a>
+            <a class="navigation-link" href="#services">SERVICES</a>
         </li>
     </ul>
     <ul class="navigation-list">
         <li class="navigation-list-element">
-            <a class="navigation-link" href="">PROJECTS</a>
+            <a class="navigation-link" href="#projects">PROJECTS</a>
         </li>
     </ul>
+
     <ul class="navigation-list">
         <li class="navigation-list-element">
-            <a class="navigation-link" href="">ABOUT US</a>
+            <a class="navigation-link" href="#aboutUs">ABOUT US</a>
         </li>
     </ul>
+    
     <ul class="navigation-list">
         <li class="navigation-list-element">
-            <a class="navigation-link" href="">CONTACT</a>
+            <a class="navigation-link" href="#contact">CONTACT</a>
         </li>
     </ul>
+</nav>
+<div class="mobileLogoWrap">
+    <a href="#main">
+        <img src="graphics/logo.png" class="logoMobile">
+    </a>
+</div>
+
+<nav class="navigationMobile">
+  
+            <a class="navigation-link" href="#services">SERVICES</a>
+       
+            <a class="navigation-link" href="#projects">PROJECTS</a>
+    
+            <a class="navigation-link" href="#aboutUs">ABOUT US</a>
+  
+            <a class="navigation-link" href="#contact">CONTACT</a>
+ 
 </nav>
 
 <body>
 
-    <section class="hero">
+    <section class="hero" id="main">
         <div class="heroCont">
             <p class="animate__animated animate__bounce" id="heroHeader1">Thinking about</p>
             <p class="animate__animated animate__bounce" id="heroHeader2">going green?</p>
@@ -64,7 +86,7 @@
         </div>
     </section>
 
-    <section class="section2">
+    <section class="section2" id="services">
         <div class="mottoCont">
             <p class="motto">Our goal is to
                 <div class="gUnder1"> </div>
@@ -120,9 +142,9 @@
             </div>
         </div>
     </section>
-    <section class="section5">
+    <section class="section5" id="projects">
         <div class="contWrapServices">
-            <p class="header2">services</p>
+            <p class="header2">Projects</p>
 
             <div class="servWrap">
 
@@ -191,7 +213,7 @@
         </div>      
     </section>
 
-    <section class="section6">
+    <section class="section6" id="aboutUs">
         <p class="header3">The benefits of going green</p>
         <div class="beneWrap">
             <div class="benefit">
@@ -205,13 +227,17 @@
                 </div>
             </div>
             <div class="benefit">
-                <p class="beneHead">environmental</p>
+                <p class="beneHead">personal</p>
                 <div class="beneCard">
-                    <p class="beneTxt">Inexhaustible energy source </p>
-                    <p class="beneTxt">No carbon emissions or greenhouse gases </p>
-                    <p class="beneTxt">Energy independence </p>
-                    <p class="beneTxt">Self-sufficient </p>
-                    <p class="beneTxt">Sustainable energy </p>
+                    <p class="beneTxt">Low energy bills long term
+                        </p>
+                    <p class="beneTxt">Strong ROI (return of investment)
+                        </p>
+                    <p class="beneTxt">Fewer maintenance cost
+                        </p>
+                    <p class="beneTxt">Minimized service disruption
+                        </p>
+                    <p class="beneTxt">Improved public image and reputation</p>
                 </div>
             </div>
         </div>
@@ -265,7 +291,7 @@
         </div>
         </section>
 
-        <section class="section7">
+        <section class="section7" id="contact">
             <p class="header5">contact us</p>
 
             <div class="contactWrap">
@@ -305,44 +331,25 @@
                         <br>
 
                         <button type="submit" class="buttG2">Send message</button>
-                        
                     </form>
-<!--
-                    <form action="/action_page.php">
-                        
-                        <label for="fname">Name:</label><br>
-                        <input type="text" id="fname" name="fname"><br>
-
-                        <label for="email">E-mail:</label><br>
-                        <input type="text" id="email" name="email"><br>
-
-                        <label for="message">Enter your message here</label><br>
-                        <input type="text" id="message" name="message"><br>
-                        
-                        
-                        <br>
-                        <input type="submit" value="Submit">
-                      </form>
--->
                 </div>
             </div>
         </section>
 
     <footer>
+        <div class="contactWrap">
+            <p class="contact"> 
+                info@GreenLead.dk</br>
+                +45 9360 5432</br>
+                Denmark
+            </p>
+            <p class="contact">Ⓒ 2022 GreenLead - All rights reserved</p>
+        </div>
+        
         
     </footer>
 
 </body>
-
-
-
-
-
-
-
-
-
-
 
 
 <script src="jquery-3.6.1.js"></script>
