@@ -3,10 +3,19 @@ a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
 a:active { text-decoration: none; }
 
+@font-face {
+    font-family: Koulen;
+    src: url(fonts/Koulen-Regular.woff2);
+  }
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto-Regular.woff2);
+  }
+
 body{
     margin: 0;
     padding: 0;
-    background-image: url(img/background.jpg);
+    background-image: url(img/);
     background-repeat: no-repeat, repeat;
     background-size: cover; /* Resize the background image to cover the entire container */
     background-color: white;
